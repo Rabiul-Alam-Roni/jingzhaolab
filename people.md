@@ -5,8 +5,6 @@ permalink: /people/
 subtitle: The Zhao Food Science Lab team, Spring/Summer 2026.
 ---
 
-{% include photo-carousel.html photos=site.data.team_photos id="people-photos" %}
-
 {% assign all_members = site.data.lab_members %}
 
 {% assign pi_members = all_members | where: "group", "pi" %}
@@ -46,14 +44,6 @@ subtitle: The Zhao Food Science Lab team, Spring/Summer 2026.
   <h2 class="section-subhead">Undergraduate Researchers</h2>
   <div class="grid grid--3">
     {% for member in undergrad_members %}{% include member-card.html member=member index=forloop.index0 %}{% endfor %}
-  </div>
-{% endif %}
-
-{% assign intern_members = all_members | where: "group", "intern" %}
-{% if intern_members.size > 0 %}
-  <h2 class="section-subhead">Interns</h2>
-  <div class="grid grid--3">
-    {% for member in intern_members %}{% include member-card.html member=member index=forloop.index0 %}{% endfor %}
   </div>
 {% endif %}
 

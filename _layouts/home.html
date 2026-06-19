@@ -1,43 +1,60 @@
 ---
 layout: default
 ---
-{% include photo-carousel.html photos=site.data.team_photos id="home-photos" %}
+<section class="hero hero--visual-only">
+  <div class="container hero__visual-wrap" aria-hidden="true">
+    {% include hero-motif.html %}
+  </div>
+</section>
 
-<section class="section home-intro">
-  <div class="container home-intro__grid">
-    <div class="home-intro__main">
-      <h1>Welcome to the Zhao Food Science Lab</h1>
-      <p>
-        The Zhao Food Science Lab at San Diego State University studies food
-        protein functionality, flavor chemistry, and alternative proteins.
-        Our work focuses on improving the value, quality, and application of
-        protein-rich foods from plant, algae, insect, and agricultural
-        by-product sources.
-      </p>
-      <p>
-        We are interested in how proteins contribute to texture, flavor,
-        stability, and overall food quality. Current research areas include
-        rice bran protein utilization, plant and algae proteins for
-        alternative foods, C-phycocyanin stabilization from spirulina, and
-        the development of meat and seafood flavors from alternative
-        proteins.
-      </p>
-      {% assign trimmed_content = content | strip %}
-      {% if trimmed_content != "" %}{{ content }}{% endif %}
-      <a class="text-link" href="{{ '/research-areas/' | relative_url }}">Read more about our research →</a>
+{% assign trimmed_content = content | strip %}
+{% if trimmed_content != "" %}
+<section class="section">
+  <div class="container intro-copy">
+    {{ content }}
+  </div>
+</section>
+{% endif %}
+
+<section class="section section--muted">
+  <div class="container">
+    <div class="section__head">
+      <h2>Research Areas</h2>
     </div>
+    <div class="grid grid--3">
+      {% for area in site.data.research_areas limit:3 %}
+        {% include research-area-card.html area=area %}
+      {% endfor %}
+    </div>
+    <p class="section__more"><a href="{{ '/research-areas/' | relative_url }}">See all research areas →</a></p>
+  </div>
+</section>
 
-    <aside class="home-intro__sidebar">
-      <h2>Recent News</h2>
-      <ul class="news-sidebar">
-        {% for item in site.data.news limit:4 %}
-          <li class="news-sidebar__item">
-            <p class="news-sidebar__date">{{ item.date }}</p>
-            <p class="news-sidebar__title">{{ item.title }}</p>
-          </li>
-        {% endfor %}
-      </ul>
-      <a class="text-link" href="{{ '/news/' | relative_url }}">See all news →</a>
-    </aside>
+<section class="section">
+  <div class="container">
+    <div class="section__head">
+      <h2>Current Projects</h2>
+    </div>
+    <div class="grid grid--3">
+      {% assign active_projects = site.data.projects | where: "status", "active" %}
+      {% for project in active_projects limit:3 %}
+        {% include project-card.html project=project %}
+      {% endfor %}
+    </div>
+    <p class="section__more"><a href="{{ '/projects/' | relative_url }}">See all current projects →</a></p>
+  </div>
+</section>
+
+<section class="section section--muted">
+  <div class="container">
+    <div class="section__head">
+      <h2>Latest News</h2>
+    </div>
+    <div class="grid grid--2">
+      {% for item in site.data.news limit:2 %}
+        {% include news-item.html item=item %}
+      {% endfor %}
+    </div>
+    <p class="section__more"><a href="{{ '/news/' | relative_url }}">See all news →</a></p>
   </div>
 </section>
