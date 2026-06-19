@@ -1,0 +1,39 @@
+{% comment %}
+  Usage: {% include member-card.html member=member index=forloop.index %}
+{% endcomment %}
+{% assign m = include.member %}
+{% assign initials = "" %}
+{% assign words = m.name | remove: "Dr." | remove: "." | split: " " %}
+{% for w in words %}
+  {% if w != "" %}
+    {% assign first_letter = w | slice: 0, 1 %}
+    {% assign initials = initials | append: first_letter %}
+  {% endif %}
+{% endfor %}
+{% assign initials = initials | slice: 0, 2 | upcase %}
+{% assign palette_index = include.index | modulo: 3 %}
+
+<article class="member-card">
+  <div class="member-card__avatar avatar--{{ palette_index }}">
+    {% if m.photo and m.photo != "" %}
+      <img src="{{ m.photo | relative_url }}" alt="Photo of {{ m.name }}">
+    {% else %}
+      <span>{{ initials }}</span>
+    {% endif %}
+  </div>
+  <div class="member-card__body">
+    <h3 class="member-card__name">{{ m.name }}</h3>
+    <p class="member-card__role">{{ m.role }}{% if m.title %} &middot; {{ m.title }}{% endif %}</p>
+    {% if m.project %}
+      <p class="member-card__project"><span class="eyebrow eyebrow--inline">Project</span> {{ m.project }}</p>
+    {% endif %}
+    {% if m.email and m.email != "To be confirmed" %}
+      <a class="member-card__email" href="mailto:{{ m.email }}">{{ m.email }}</a>
+    {% elsif m.email %}
+      {% include placeholder-badge.html text=m.email %}
+    {% endif %}
+    {% if m.note %}
+      <p class="member-card__note">{{ m.note }}</p>
+    {% endif %}
+  </div>
+</article>

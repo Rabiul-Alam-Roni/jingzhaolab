@@ -1,0 +1,78 @@
+# ───────────────────────────────────────────────────────────
+# SITE CONFIGURATION — The Zhao Food Science Lab
+# ───────────────────────────────────────────────────────────
+# This file controls site-wide settings. Most day-to-day edits
+# (people, projects, publications, news) happen in the _data/
+# folder instead — see README.md.
+#
+# TWO HOSTING MODES — read this before you publish
+# ───────────────────────────────────────────────────────────
+# MODE 1: Free GitHub Pages (use this now)
+#   url:      "https://YOUR-GITHUB-USERNAME.github.io"
+#   baseurl:  "/jingzhaolab"
+#
+# MODE 2: Custom SDSU domain (switch to this later, once approved)
+#   url:      "https://jzhao.sdsu.edu"
+#   baseurl:  ""
+#
+# Full step-by-step instructions for switching are in README.md
+# under "Connecting a custom domain."
+# ───────────────────────────────────────────────────────────
+
+title: "The Zhao Food Science Lab"
+short_title: "Zhao Lab"
+tagline: "Food protein functionality, flavor chemistry, and alternative proteins"
+description: >-
+  The Zhao Food Science Lab at San Diego State University studies the
+  functionality and flavor of food proteins, including alternative and
+  plant-based proteins, to support the next generation of sustainable
+  food ingredients.
+
+# --- MODE 1 (current): free GitHub Pages project site ---
+url: "https://Rabiul-Alam-Roni.github.io"
+baseurl: "/jingzhaolab"
+
+# --- MODE 2 (future): uncomment these two lines and delete the two
+#     above when you are ready to switch to the SDSU domain ---
+# url: "https://jzhao.sdsu.edu"
+# baseurl: ""
+
+institution: "San Diego State University"
+department: "School of Exercise and Nutritional Sciences"
+pi_name: "Dr. Jing Zhao"
+contact_email: "jzhao2@sdsu.edu"
+contact_phone: "619-594-3106"
+contact_building: "Professional Studies and Fine Arts (PSFA), Room 403"
+contact_address: "5500 Campanile Drive, San Diego, CA 92182-7251"
+scholar_url: "https://scholar.google.com/citations?hl=en&user=7flyslUAAAAJ"
+sdsu_profile_url: "https://ens.sdsu.edu/people/faculty/zhao-jing"
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# NOTE: each page file (about.md, contact.md, etc.) sets its own
+# `permalink:` in its front matter — Jekyll's global `permalink:`
+# setting only affects the posts collection, which this site doesn't
+# use, so it's intentionally left out here. Don't add it to a page's
+# defaults expecting it to set the URL; edit that page's own front
+# matter instead.
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

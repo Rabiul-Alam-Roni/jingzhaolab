@@ -1,0 +1,144 @@
+# ───────────────────────────────────────────────────────────
+# LAB MEMBERS
+# ───────────────────────────────────────────────────────────
+# Source: Zhao group Spring 2026 & Summer Roster (provided by Rabiul).
+# Note: the roster also contains weekly availability hours and summer
+# travel dates for internal lab scheduling — those are intentionally
+# left out of this public-facing file. Only name, role, and project
+# are published.
+#
+# HOW TO ADD A PERSON
+# Copy a block below, paste it at the end of the right group, and
+# fill in the fields. Leave "photo:" blank to show an initials avatar
+# until you add a real photo to assets/images/people/.
+#
+# "group" controls which section of the People page a person appears
+# in. Valid values: pi, staff, collaborator, grad, undergrad, alumni
+# ───────────────────────────────────────────────────────────
+
+- name: "Dr. Jing Zhao"
+  role: "Principal Investigator"
+  title: "Associate Professor"
+  group: pi
+  email: "jzhao2@sdsu.edu"
+  photo: ""   # add assets/images/people/jing-zhao.jpg (e.g. her SDSU profile photo) and set photo: /assets/images/people/jing-zhao.jpg
+  bio: >
+    Dr. Zhao's research focuses on the functionality and flavor impacts
+    of food proteins, including agricultural by-product utilization,
+    novel protein development and characterization (insect and algae
+    proteins), and the use of plant and algae proteins in alternative
+    meat products. (Source: SDSU faculty profile.)
+
+- name: "Dr. Ali Raza"
+  role: "Research Scientist"
+  group: staff
+  project: "USDA Microalgae Initiative, AI Bobby, Chapman Coffee, CPP Pea Protein"
+  email: "araza@sdsu.edu"
+  photo: ""
+
+- name: "James Wadman"
+  role: "Lab Manager"
+  group: staff
+  project: "Lab operations and management"
+  email: "jwadman7311@sdsu.edu"
+  photo: ""
+
+- name: "Dr. Changqi Liu"
+  role: "Collaborator"
+  group: collaborator
+  project: "eFARMS, USDA Microalgae Initiative"
+  email: "changqi.liu@sdsu.edu"
+  photo: ""
+
+- name: "Rabiul Alam Roni"
+  role: "Graduate Student"
+  group: grad
+  project: "eFARMS, AI Bobby, WSU Wheat Protein Meat Analogue"
+  email: "rroni0528@sdsu.edu"
+  photo: ""
+
+- name: "Jacob Pascua"
+  role: "Graduate Student"
+  group: grad
+  project: "Brewing Project"
+  email: "jpascua6989@sdsu.edu"
+  photo: ""
+
+- name: "Natalie Yu"
+  role: "Graduate Student"
+  group: grad
+  project: "USDA Microalgae Initiative"
+  email: "nyu0207@sdsu.edu"
+  photo: ""
+
+- name: "Cayla Green"
+  role: "Graduate Student"
+  group: grad
+  project: "Metarom"
+  email: "cgreen1266@sdsu.edu"
+  photo: ""
+
+- name: "Charles Bilgrien"
+  role: "Graduate Student"
+  group: grad
+  project: "eFARMS"
+  email: "cbilgrien4579@sdsu.edu"
+  photo: ""
+
+- name: "Judy Figueroa"
+  role: "Graduate Student"
+  group: grad
+  project: "USDA Microalgae Initiative"
+  email: "jfigueroa2282@sdsu.edu"
+  photo: ""
+
+- name: "Visiting Student Researchers (France)"
+  role: "Graduate Visiting Researchers"
+  group: grad
+  project: "To be confirmed"
+  email: "To be confirmed"
+  photo: ""
+  note: "Individual names to be added once confirmed."
+
+- name: "Helen Ruiz"
+  role: "Undergraduate Researcher"
+  group: undergrad
+  project: "USDA Microalgae Initiative"
+  email: "hruizrodriguez8158@sdsu.edu"
+  photo: ""
+
+- name: "Aerin Felton"
+  role: "Undergraduate Researcher"
+  group: undergrad
+  project: "Smolbol, NASA Food Challenge"
+  email: "afelton3978@sdsu.edu"
+  photo: ""
+
+- name: "Giovanni Hernandez Soto"
+  role: "Undergraduate Researcher"
+  group: undergrad
+  project: "Antioxidant & Flavor Research (HPLC) — project to be finalized"
+  email: "ghernandezsoto1799@sdsu.edu"
+  photo: ""
+
+- name: "Stacey Lehrer"
+  role: "Undergraduate Researcher"
+  group: undergrad
+  project: "USDA Microalgae Initiative"
+  email: "Slehrer5226@sdsu.edu"
+  photo: ""
+
+- name: "Liana Feng"
+  role: "Undergraduate Researcher"
+  group: undergrad
+  project: "eFARMS, Spirulina Allergen & Sensory Research"
+  email: "lfeng8870@sdsu.edu"
+  photo: ""
+
+- name: "Krisztina Kemenes"
+  role: "Lab Alumna"
+  group: alumni
+  project: "NASA Space Guacamole — Antioxidant Research"
+  email: "kkemenes1457@sdsu.edu"
+  photo: ""
+  note: "Graduated — destination to be confirmed."

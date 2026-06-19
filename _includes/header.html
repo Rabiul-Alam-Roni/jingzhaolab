@@ -1,0 +1,53 @@
+<header class="site-header">
+  <div class="container site-header__row">
+    <a class="site-header__brand" href="{{ '/' | relative_url }}">
+      <span class="site-header__mark" aria-hidden="true">JZ</span>
+      <span class="site-header__name">
+        <span class="site-header__name-main">{{ site.short_title }}</span>
+        <span class="site-header__name-sub">{{ site.institution }}</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+      <span class="nav-toggle__bar"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <nav class="site-nav" id="primary-nav">
+      <ul class="site-nav__list">
+        {% for item in site.data.nav %}
+          {% if item.children %}
+            {% assign section_active = false %}
+            {% for child in item.children %}
+              {% if page.url == child.url %}{% assign section_active = true %}{% endif %}
+            {% endfor %}
+            <li class="site-nav__item has-children">
+              <details class="site-nav__dropdown"{% if section_active %} open{% endif %}>
+                <summary class="site-nav__link{% if section_active %} is-active{% endif %}">
+                  {{ item.title }}
+                </summary>
+                <ul class="site-nav__submenu">
+                  {% for child in item.children %}
+                    <li>
+                      <a href="{{ child.url | relative_url }}" class="site-nav__sublink{% if page.url == child.url %} is-active{% endif %}">
+                        {{ child.title }}
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </details>
+            </li>
+          {% else %}
+            <li class="site-nav__item">
+              <a href="{{ item.url | relative_url }}" class="site-nav__link{% if page.url == item.url %} is-active{% endif %}">
+                {{ item.title }}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
