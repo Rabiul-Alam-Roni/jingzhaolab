@@ -1,0 +1,9 @@
+{% comment %}
+  Usage: {% include news-item.html item=item %}
+{% endcomment %}
+{% assign n = include.item %}
+<article class="news-item">
+  <p class="news-item__date">{{ n.date }}</p>
+  <h3 class="news-item__title">{{ n.title }}</h3>
+  <p class="news-item__summary">{{ n.summary }}</p>
+</article>
