@@ -2,32 +2,42 @@
 layout: page
 title: About Dr. Zhao
 permalink: /about/
-subtitle: Associate Professor, School of Exercise and Nutritional Sciences, San Diego State University
 ---
 
-<div class="profile-block">
-  <div class="profile-block__avatar avatar--0">
+<div class="profile-block profile-block--centered">
+  <div class="profile-block__avatar profile-block__avatar--lg avatar--0">
     <img src="{{ '/assets/images/people/jing-zhao.jpg' | relative_url }}" alt="Photo of Dr. Jing Zhao">
   </div>
-  <div class="profile-block__body">
-    <h2>Dr. Jing Zhao</h2>
-    <p class="profile-block__title">Associate Professor</p>
-    <p><a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a> &middot; {{ site.contact_phone }}</p>
-    <p><a href="{{ site.sdsu_profile_url }}">View official SDSU faculty profile →</a></p>
+  <h2>Dr. Jing Zhao</h2>
+  <div class="profile-block__titles">
+    <p>Associate Professor</p>
+    <p>School of Exercise and Nutritional Sciences</p>
+    <p>San Diego State University</p>
+  </div>
+  <div class="profile-block__icons">
+    <a href="mailto:{{ site.contact_email }}" aria-label="Email Dr. Zhao" title="{{ site.contact_email }}">{% include contact-icon.html type="email" %}</a>
+    <a href="https://www.linkedin.com/in/jing-zhao-68156a47/" aria-label="Dr. Zhao on LinkedIn" target="_blank" rel="noopener">{% include contact-icon.html type="linkedin" %}</a>
   </div>
 </div>
 
-## Research Interest
-
-Dr. Zhao's research focuses on the functionalities and flavor impacts of food
-proteins. Her research interests include agricultural by-product utilization
-(rice bran), novel protein development and characterization (insect and algae
-proteins), the utilization of plant and algae proteins in alternative meat
-products, and flavor characterization of protein-rich foods. Current work
-includes rice bran protein extraction and utilization in gluten-free pasta,
-stabilization of C-phycocyanin (a blue colorant derived from spirulina), and
-characterization and synthesis of meat and seafood flavors from alternative
-proteins.
+<div class="profile-bio">
+  <p>
+    Dr. Jing Zhao is an Associate Professor in the School of Exercise and
+    Nutritional Sciences at San Diego State University. Her research focuses
+    on the functionality and flavor impacts of food proteins, with interests
+    in agricultural by-products, novel protein sources, plant and algae
+    proteins, alternative meat products, and flavor characterization of
+    protein-rich foods.
+  </p>
+  <p>
+    Her current work includes rice bran protein extraction and utilization
+    in gluten-free pasta, stabilization of C-phycocyanin from spirulina, and
+    characterization and synthesis of meat and seafood flavors from
+    alternative proteins. Through her research and mentoring, Dr. Zhao's lab
+    works to advance food protein science, alternative protein innovation,
+    and sustainable food ingredient development.
+  </p>
+</div>
 
 ## Education
 
@@ -40,8 +50,3 @@ proteins.
 - American Chemical Society (ACS)
 - Institute of Food Technologists (IFT)
 - Southern California IFT Section (SCIFTS)
-
-## Background
-
-{% include placeholder-badge.html text="To be updated" %}
-A fuller narrative biography can be added here.

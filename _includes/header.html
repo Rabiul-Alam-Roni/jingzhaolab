@@ -23,7 +23,7 @@
             <li class="site-nav__item has-children">
               <details class="site-nav__dropdown"{% if section_active %} open{% endif %}>
                 <summary class="site-nav__link{% if section_active %} is-active{% endif %}">
-                  {{ item.title }}
+                  <span class="site-nav__link-text">{{ item.title }}</span><span class="site-nav__chevron" aria-hidden="true">▾</span>
                 </summary>
                 <ul class="site-nav__submenu">
                   {% for child in item.children %}

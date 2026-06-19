@@ -184,19 +184,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 
 .site-nav__dropdown { position: relative; }
 .site-nav__dropdown summary {
-  list-style: none;
+  list-style: none !important;
   cursor: pointer;
-  display: inline-flex;
+  display: inline-flex !important;
   align-items: center;
-  gap: 3px;
+  padding: 10px 12px;
 }
 .site-nav__dropdown summary::-webkit-details-marker { display: none; }
-.site-nav__dropdown summary::after {
-  content: "▾";
-  font-size: 10px;
-  margin-left: 4px;
-  color: var(--color-muted);
-}
+.site-nav__dropdown summary::marker { content: ""; }
+.site-nav__link-text { display: inline-block; }
+.site-nav__chevron { font-size: 10px; margin-left: 4px; color: var(--color-muted); line-height: 1; }
 .site-nav__submenu {
   position: absolute;
   top: calc(100% + 6px);
@@ -204,7 +201,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   min-width: 190px;
   background: #fff;
   border: 1px solid var(--color-border);
-  border-radius: 8px;
+  border-top: 3px solid var(--color-primary);
+  border-radius: 4px;
   box-shadow: var(--shadow-md);
   list-style: none;
   padding: 6px;
@@ -247,17 +245,34 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   .site-nav__submenu { position: static; box-shadow: none; border: none; padding-left: 14px; }
 }
 
-/* ── Hero (decorative band only — no text by design) ───── */
-.hero {
-  background: linear-gradient(135deg, var(--color-primary) 0%, #7a1322 100%);
-  color: rgba(255, 255, 255, 0.92);
-  overflow: hidden;
+/* ── Homepage: welcome + news sidebar (Coley-style) ─────── */
+.home-intro { padding-top: 48px; }
+.home-intro__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 56px;
+  align-items: start;
 }
-.hero__visual-wrap { padding: 36px 24px; display: flex; justify-content: center; }
-.hero-motif { width: 100%; max-width: 640px; height: auto; }
+.home-intro__main h1 { font-family: var(--font-display); font-size: 2rem; margin: 0 0 18px; }
+.home-intro__main p { color: var(--color-text); margin: 0 0 16px; }
+.text-link { color: var(--color-primary); font-weight: 600; text-decoration: none; }
+.text-link:hover { text-decoration: underline; }
+
+.home-intro__sidebar {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+.home-intro__sidebar h2 { font-family: var(--font-display); font-size: 1.15rem; margin: 0 0 16px; }
+.news-sidebar { list-style: none; padding: 0; margin: 0 0 16px; }
+.news-sidebar__item { padding: 12px 0; border-bottom: 1px solid var(--color-border); }
+.news-sidebar__item:first-child { padding-top: 0; }
+.news-sidebar__date { font-family: var(--font-mono); font-size: 0.7rem; color: var(--color-muted); text-transform: uppercase; margin: 0 0 4px; }
+.news-sidebar__title { font-size: 0.92rem; margin: 0; }
 
 @media (max-width: 760px) {
-  .hero__visual-wrap { padding: 24px 16px; }
+  .home-intro__grid { grid-template-columns: 1fr; gap: 32px; }
 }
 
 /* ── Cards: research areas ──────────────────────────────── */
@@ -296,6 +311,45 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 .project-card__team { font-size: 0.85rem; color: var(--color-muted); margin: 0 0 10px; }
 .project-card__desc { font-size: 0.9rem; margin: 0; }
 
+/* ── Photo carousel (People page group photos) ──────────── */
+.photo-carousel { position: relative; margin-bottom: 40px; border-radius: var(--radius); overflow: hidden; background: var(--color-surface); }
+.photo-carousel__track { position: relative; }
+.photo-carousel__slide { display: none; margin: 0; }
+.photo-carousel__slide.is-active { display: block; }
+.photo-carousel__slide img { width: 100%; max-height: 520px; object-fit: cover; display: block; }
+.photo-carousel__slide figcaption {
+  padding: 10px 16px;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  background: #fff;
+}
+.photo-carousel__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--color-border);
+  color: var(--color-charcoal);
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: var(--shadow-sm);
+}
+.photo-carousel__arrow:hover { background: #fff; }
+.photo-carousel__arrow--prev { left: 14px; }
+.photo-carousel__arrow--next { right: 14px; }
+.photo-carousel__dots {
+  position: absolute;
+  bottom: 48px;
+  left: 0; right: 0;
+  display: flex; justify-content: center; gap: 8px;
+}
+.photo-carousel__dot { width: 8px; height: 8px; border-radius: 50%; border: none; background: rgba(255, 255, 255, 0.6); cursor: pointer; padding: 0; }
+.photo-carousel__dot.is-active { background: #fff; box-shadow: 0 0 0 1.5px rgba(0,0,0,0.25); }
+
 /* ── Cards: people ───────────────────────────────────────── */
 .member-card { display: flex; gap: 18px; align-items: flex-start; background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius); padding: 22px; }
 .member-card__avatar {
@@ -316,9 +370,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 .member-card__name { font-family: var(--font-display); font-size: 1rem; margin: 0 0 2px; }
 .member-card__role { font-size: 0.84rem; color: var(--color-muted); margin: 0 0 6px; }
 .member-card__project { font-size: 0.84rem; margin: 0 0 6px; }
-.member-card__email { font-size: 0.84rem; color: var(--color-primary); text-decoration: none; }
-.member-card__email:hover { text-decoration: underline; }
+.member-card__icons { display: flex; gap: 12px; margin-top: 4px; }
+.member-card__icons a { color: var(--color-primary); display: inline-flex; }
+.contact-icon { width: 18px; height: 18px; }
 .member-card__note { font-size: 0.78rem; color: var(--color-muted); margin-top: 6px; font-style: italic; }
+.member-card__bio { font-size: 0.85rem; color: var(--color-muted); margin-top: 8px; line-height: 1.55; }
 
 /* ── News ────────────────────────────────────────────────── */
 .news-item__date { font-family: var(--font-mono); font-size: 0.72rem; color: var(--color-muted); text-transform: uppercase; margin: 0 0 8px; }
@@ -381,6 +437,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 
 /* ── Profile block (About page) ─────────────────────────── */
 .profile-block { display: flex; gap: 24px; align-items: center; margin-bottom: 40px; flex-wrap: wrap; }
+.profile-block--centered { flex-direction: column; text-align: center; margin: 8px auto 32px; max-width: 520px; }
+.profile-block--centered h2 { font-family: var(--font-display); font-size: 1.6rem; margin: 8px 0 4px; }
 .profile-block__avatar {
   width: 96px; height: 96px;
   border-radius: 50%;
@@ -393,8 +451,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   overflow: hidden;
   flex-shrink: 0;
 }
+.profile-block__avatar--lg { width: 168px; height: 168px; font-size: 2.4rem; }
 .profile-block__avatar img { width: 100%; height: 100%; object-fit: cover; }
 .profile-block__title { color: var(--color-muted); margin: 2px 0 10px; }
+.profile-block__titles p { font-style: italic; color: var(--color-muted); margin: 0; font-size: 0.95rem; line-height: 1.5; }
+.profile-block__icons { display: flex; gap: 14px; margin-top: 14px; }
+.profile-block__icons a { color: var(--color-primary); display: inline-flex; }
+.profile-bio { max-width: 680px; margin: 0 auto 40px; }
+.profile-bio p { margin: 0 0 16px; }
 
 /* ── Publications ────────────────────────────────────────── */
 .scholar-cta { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 24px; margin-bottom: 36px; }
