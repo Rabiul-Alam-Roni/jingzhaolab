@@ -20,4 +20,7 @@
       {% include placeholder-badge.html text="To be updated" %}
     {% endif %}
   </p>
+  {% if p.link %}
+    <a class="text-link" href="{{ p.link }}">Read more →</a>
+  {% endif %}
 </article>

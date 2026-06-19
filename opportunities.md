@@ -33,9 +33,3 @@ on how visiting scholars or international interns can apply.
 Email Dr. Zhao at <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a>
 with a brief statement of your background, research interests, and what
 you hope to learn in the lab.
-
-<p class="page-footnote">
-  This page intentionally avoids specific claims about open positions,
-  funding, or recruiting numbers until confirmed by Dr. Zhao. Edit this
-  file directly to add real details.
-</p>

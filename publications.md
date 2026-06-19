@@ -3,7 +3,7 @@ layout: page
 title: Publications
 permalink: /publications/
 eyebrow: Publications
-subtitle: A selected list, verified from Dr. Zhao's CV. For the complete and most current list, see Google Scholar.
+subtitle: Selected publications. For the complete and most current list, see Google Scholar.
 ---
 
 <div class="scholar-cta">
@@ -32,9 +32,3 @@ subtitle: A selected list, verified from Dr. Zhao's CV. For the complete and mos
     </li>
   {% endfor %}
 </ul>
-
-<p class="page-footnote">
-  This is a curated subset of Dr. Zhao's peer-reviewed work, focused on
-  protein functionality and flavor chemistry — not the complete record.
-  Add new entries in <code>_data/publications.yml</code>.
-</p>

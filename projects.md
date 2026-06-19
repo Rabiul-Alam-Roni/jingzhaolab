@@ -3,7 +3,7 @@ layout: page
 title: Current Projects
 permalink: /projects/
 eyebrow: Research
-subtitle: Project names are working codenames from the lab roster. Full descriptions are being added.
+subtitle: Full project descriptions are being added.
 ---
 
 <div class="grid grid--3">
