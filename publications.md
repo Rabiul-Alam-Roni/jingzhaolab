@@ -3,12 +3,11 @@ layout: page
 title: Publications
 permalink: /publications/
 eyebrow: Publications
-subtitle: A selected list, verified from Dr. Zhao's CV. For the complete and most current list, see Google Scholar.
+subtitle: Selected publications. For the complete and most current list, see Google Scholar.
 ---
 
 <div class="scholar-cta">
   <a class="btn btn--primary" href="{{ site.scholar_url }}">View full publication list on Google Scholar →</a>
-  <p class="scholar-cta__note">Google Scholar cannot be auto-synced to this site, so this page is updated manually. 2023–2026 publications will be added here as they're confirmed.</p>
 </div>
 
 ## Selected Journal Articles
@@ -32,9 +31,3 @@ subtitle: A selected list, verified from Dr. Zhao's CV. For the complete and mos
     </li>
   {% endfor %}
 </ul>
-
-<p class="page-footnote">
-  This is a curated subset of Dr. Zhao's peer-reviewed work, focused on
-  protein functionality and flavor chemistry — not the complete record.
-  Add new entries in <code>_data/publications.yml</code>.
-</p>

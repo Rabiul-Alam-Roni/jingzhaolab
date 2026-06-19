@@ -21,13 +21,13 @@
   title: "Associate Professor"
   group: pi
   email: "jzhao2@sdsu.edu"
-  photo: ""   # add assets/images/people/jing-zhao.jpg (e.g. her SDSU profile photo) and set photo: /assets/images/people/jing-zhao.jpg
+  photo: "/assets/images/people/jing-zhao.jpg"
   bio: >
     Dr. Zhao's research focuses on the functionality and flavor impacts
     of food proteins, including agricultural by-product utilization,
     novel protein development and characterization (insect and algae
     proteins), and the use of plant and algae proteins in alternative
-    meat products. (Source: SDSU faculty profile.)
+    meat products.
 
 - name: "Dr. Ali Raza"
   role: "Research Scientist"
@@ -48,13 +48,6 @@
   group: collaborator
   project: "eFARMS, USDA Microalgae Initiative"
   email: "changqi.liu@sdsu.edu"
-  photo: ""
-
-- name: "Rabiul Alam Roni"
-  role: "Graduate Student"
-  group: grad
-  project: "eFARMS, AI Bobby, WSU Wheat Protein Meat Analogue"
-  email: "rroni0528@sdsu.edu"
   photo: ""
 
 - name: "Jacob Pascua"
@@ -100,6 +93,13 @@
   photo: ""
   note: "Individual names to be added once confirmed."
 
+- name: "Rabiul Alam Roni"
+  role: "Graduate Student"
+  group: grad
+  project: "eFARMS, AI Bobby, WSU Wheat Protein Meat Analogue"
+  email: "rroni0528@sdsu.edu"
+  photo: ""
+
 - name: "Helen Ruiz"
   role: "Undergraduate Researcher"
   group: undergrad
@@ -142,3 +142,58 @@
   email: "kkemenes1457@sdsu.edu"
   photo: ""
   note: "Graduated — destination to be confirmed."
+
+- name: "Jesse Baker"
+  role: "Former Lab Member"
+  group: alumni
+  project: "Rice Bran Protein Extraction, Seafood Flavor Development"
+  photo: ""
+
+- name: "Sarah Kinsey"
+  role: "Former Lab Member"
+  group: alumni
+  photo: ""
+
+- name: "April Flowers"
+  role: "Former Lab Member"
+  group: alumni
+  photo: ""
+
+- name: "Kayla Boggs"
+  role: "Former Lab Member"
+  group: alumni
+  photo: ""
+
+- name: "Anna Kwon"
+  role: "Former Lab Member"
+  group: alumni
+  photo: ""
+
+- name: "Selene Alvarado Martinez"
+  role: "Former Lab Member"
+  group: alumni
+  project: "Algae Protein Extraction and Flavor Characterization"
+  photo: ""
+
+- name: "Carlos Jaimes Noriega"
+  role: "Former Lab Member"
+  group: alumni
+  project: "Rice Bran Protein Extraction, Huitlacoche Composition and Flavor"
+  photo: ""
+
+- name: "Ellie Cramton"
+  role: "Former Lab Member"
+  group: alumni
+  project: "Algae Protein Extraction and Flavor Characterization"
+  photo: ""
+
+- name: "Hugo Fehrenbach"
+  role: "Former Lab Member"
+  group: alumni
+  project: "Rice Bran Protein Extraction, Seafood Flavor Development"
+  photo: ""
+
+- name: "Daniella Rosas"
+  role: "Former Lab Member"
+  group: alumni
+  photo: ""

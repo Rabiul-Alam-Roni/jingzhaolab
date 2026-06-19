@@ -15,7 +15,7 @@
   --color-primary: #a6192e;        /* SDSU dark red */
   --color-primary-bright: #d41736; /* SDSU bright red */
   --color-charcoal: #2d2828;
-  --color-teal: #00a39d;           /* SDSU secondary accent, used sparingly */
+  --color-teal: #00a39d;           /* SDSU secondary accent */
   --color-placeholder-bg: #fff3d6;
   --color-placeholder-text: #8a5a00;
 
@@ -166,9 +166,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   font-size: 15px;
   flex-shrink: 0;
 }
-.site-header__name { display: flex; flex-direction: column; line-height: 1.25; }
-.site-header__name-main { font-family: var(--font-display); font-weight: 700; font-size: 17px; }
-.site-header__name-sub { font-size: 11.5px; color: var(--color-muted); }
+.site-header__name-main { font-family: var(--font-display); font-weight: 700; font-size: 17px; white-space: nowrap; }
 
 .site-nav__list { display: flex; gap: 4px; list-style: none; padding: 0; margin: 0; align-items: center; }
 .site-nav__link, .site-nav__sublink {
@@ -223,6 +221,11 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 }
 .nav-toggle__bar { width: 22px; height: 2px; background: var(--color-text); display: block; }
 
+@media (max-width: 1300px) and (min-width: 881px) {
+  .site-header__name-main { font-size: 14px; }
+  .site-nav__link, .site-nav__sublink { font-size: 13px; padding: 10px 8px; }
+}
+
 @media (max-width: 880px) {
   .nav-toggle { display: flex; }
   .site-nav {
@@ -241,32 +244,24 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   .site-nav__submenu { position: static; box-shadow: none; border: none; padding-left: 14px; }
 }
 
-/* ── Hero ────────────────────────────────────────────────── */
+/* ── Hero (decorative band only — no text by design) ───── */
 .hero {
   background: linear-gradient(135deg, var(--color-primary) 0%, #7a1322 100%);
-  color: #fff;
-  padding: 88px 0 96px;
+  color: rgba(255, 255, 255, 0.92);
   overflow: hidden;
 }
-.hero__row { display: flex; align-items: center; justify-content: space-between; gap: 48px; }
-.hero .eyebrow { color: rgba(255, 255, 255, 0.85); }
-.hero__copy { max-width: 560px; }
-.hero__title {
-  font-family: var(--font-display);
-  font-size: clamp(2.2rem, 5vw, 3.4rem);
-  line-height: 1.05;
-  font-weight: 700;
-  margin: 0 0 18px;
-}
-.hero__tagline { font-size: 1.1rem; opacity: 0.92; margin: 0 0 28px; max-width: 480px; }
-.hero__actions { display: flex; gap: 14px; flex-wrap: wrap; }
-.hero__visual { flex: 1; min-width: 220px; color: rgba(255, 255, 255, 0.9); }
-.peptide-chain { width: 100%; height: auto; }
+.hero__visual-wrap { padding: 36px 24px; display: flex; justify-content: center; }
+.hero-motif { width: 100%; max-width: 640px; height: auto; }
 
 @media (max-width: 760px) {
-  .hero { padding: 56px 0 48px; }
-  .hero__row { flex-direction: column; align-items: flex-start; }
+  .hero__visual-wrap { padding: 24px 16px; }
 }
+
+/* ── CTA band ────────────────────────────────────────────── */
+.cta-band { background: var(--color-charcoal); color: #fff; }
+.cta-band__row { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+.cta-band h2 { font-family: var(--font-display); margin: 0 0 6px; font-size: 1.5rem; }
+.cta-band p { margin: 0; color: rgba(255, 255, 255, 0.78); }
 
 /* ── Cards: research areas ──────────────────────────────── */
 .area-card, .project-card, .news-item {
@@ -336,12 +331,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 .badge { display: inline-block; font-size: 0.72rem; font-weight: 600; padding: 3px 10px; border-radius: 999px; margin-top: 6px; }
 .badge--placeholder { background: var(--color-placeholder-bg); color: var(--color-placeholder-text); }
 
-/* ── CTA band ────────────────────────────────────────────── */
-.cta-band { background: var(--color-charcoal); color: #fff; }
-.cta-band__row { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
-.cta-band h2 { font-family: var(--font-display); margin: 0 0 6px; font-size: 1.5rem; }
-.cta-band p { margin: 0; color: rgba(255, 255, 255, 0.78); }
-
 /* ── Inner page header / content ────────────────────────── */
 .page-header { background: var(--color-surface); border-bottom: 1px solid var(--color-border); padding: 56px 0 40px; }
 .page-header__title { font-family: var(--font-display); font-size: 2.2rem; margin: 8px 0 10px; }
@@ -357,6 +346,40 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
   padding-top: 20px;
   border-top: 1px solid var(--color-border);
 }
+
+/* ── Equipment cards (Facilities page) ──────────────────── */
+.equipment-card {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+.equipment-card__photo { aspect-ratio: 4 / 3; overflow: hidden; background: var(--color-surface); }
+.equipment-card__photo img { width: 100%; height: 100%; object-fit: cover; }
+.equipment-card__body { padding: 16px 18px; }
+.equipment-card__name { font-family: var(--font-display); font-size: 1rem; margin: 0 0 4px; }
+.equipment-card__desc { font-size: 0.88rem; color: var(--color-muted); margin: 0; }
+
+.facility-section { margin-bottom: 56px; }
+.facility-section h2 { font-family: var(--font-display); font-size: 1.5rem; margin: 0 0 12px; }
+.facility-section__intro { max-width: 760px; }
+
+.spec-columns { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin: 20px 0; }
+@media (max-width: 640px) { .spec-columns { grid-template-columns: 1fr; } }
+.spec-columns h4 { font-family: var(--font-display); font-size: 0.95rem; margin: 0 0 8px; }
+.spec-columns ul { margin: 0; padding-left: 1.1rem; font-size: 0.9rem; }
+
+.sensory-test-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.88rem; }
+.sensory-test-table th, .sensory-test-table td {
+  border: 1px solid var(--color-border);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+.sensory-test-table th { background: var(--color-surface); font-family: var(--font-display); }
+
+/* ── Equipment cards end ─────────────────────────────────── */
 
 /* ── Profile block (About page) ─────────────────────────── */
 .profile-block { display: flex; gap: 24px; align-items: center; margin-bottom: 40px; flex-wrap: wrap; }
