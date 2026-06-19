@@ -13,7 +13,7 @@
 # until you add a real photo to assets/images/people/.
 #
 # "group" controls which section of the People page a person appears
-# in. Valid values: pi, staff, collaborator, grad, undergrad, alumni
+# in. Valid values: pi, staff, collaborator, grad, undergrad, intern, alumni
 # ───────────────────────────────────────────────────────────
 
 - name: "Dr. Jing Zhao"
@@ -21,13 +21,8 @@
   title: "Associate Professor"
   group: pi
   email: "jzhao2@sdsu.edu"
+  linkedin: "https://www.linkedin.com/in/jing-zhao-68156a47/"
   photo: "/assets/images/people/jing-zhao.jpg"
-  bio: >
-    Dr. Zhao's research focuses on the functionality and flavor impacts
-    of food proteins, including agricultural by-product utilization,
-    novel protein development and characterization (insect and algae
-    proteins), and the use of plant and algae proteins in alternative
-    meat products.
 
 - name: "Dr. Ali Raza"
   role: "Research Scientist"
@@ -86,8 +81,8 @@
   photo: ""
 
 - name: "Visiting Student Researchers (France)"
-  role: "Graduate Visiting Researchers"
-  group: grad
+  role: "Visiting Intern Researchers"
+  group: intern
   project: "To be confirmed"
   email: "To be confirmed"
   photo: ""

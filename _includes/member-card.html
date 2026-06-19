@@ -27,10 +27,22 @@
     {% if m.project %}
       <p class="member-card__project"><span class="eyebrow eyebrow--inline">Project</span> {{ m.project }}</p>
     {% endif %}
-    {% if m.email and m.email != "To be confirmed" %}
-      <a class="member-card__email" href="mailto:{{ m.email }}">{{ m.email }}</a>
+    {% assign has_valid_email = false %}
+    {% if m.email and m.email != "To be confirmed" %}{% assign has_valid_email = true %}{% endif %}
+    {% if has_valid_email or m.linkedin %}
+      <div class="member-card__icons">
+        {% if has_valid_email %}
+          <a href="mailto:{{ m.email }}" aria-label="Email {{ m.name }}" title="{{ m.email }}">{% include contact-icon.html type="email" %}</a>
+        {% endif %}
+        {% if m.linkedin %}
+          <a href="{{ m.linkedin }}" aria-label="{{ m.name }} on LinkedIn" target="_blank" rel="noopener">{% include contact-icon.html type="linkedin" %}</a>
+        {% endif %}
+      </div>
     {% elsif m.email %}
       {% include placeholder-badge.html text=m.email %}
+    {% endif %}
+    {% if m.bio %}
+      <p class="member-card__bio">{{ m.bio }}</p>
     {% endif %}
     {% if m.note %}
       <p class="member-card__note">{{ m.note }}</p>
