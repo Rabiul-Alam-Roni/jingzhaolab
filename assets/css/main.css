@@ -246,14 +246,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 }
 
 /* ── Homepage: welcome + news sidebar (Coley-style) ─────── */
-.home-intro { padding-top: 48px; }
+.home-intro { padding-top: 48px; padding-bottom: 32px; }
 .home-intro__grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 56px;
   align-items: start;
 }
-.home-intro__main h1 { font-family: var(--font-display); font-size: 2rem; margin: 0 0 18px; }
+.home-intro__main h1 { font-family: var(--font-display); font-weight: 700; font-size: 2.2rem; margin: 0 0 18px; }
 .home-intro__main p { color: var(--color-text); margin: 0 0 16px; }
 .text-link { color: var(--color-primary); font-weight: 600; text-decoration: none; }
 .text-link:hover { text-decoration: underline; }
@@ -503,7 +503,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 .placeholder-table th { background: var(--color-surface); }
 
 /* ── Footer ──────────────────────────────────────────────── */
-.site-footer { background: var(--color-charcoal); color: rgba(255, 255, 255, 0.85); margin-top: 40px; }
+.site-footer { background: var(--color-charcoal); color: rgba(255, 255, 255, 0.85); margin-top: 8px; }
 .site-footer__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; padding: 48px 0 32px; }
 @media (max-width: 760px) { .site-footer__grid { grid-template-columns: 1fr; } }
 .site-footer__title { font-family: var(--font-display); font-size: 1.1rem; color: #fff; margin: 0 0 6px; }
