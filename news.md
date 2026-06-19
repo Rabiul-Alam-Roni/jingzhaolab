@@ -11,3 +11,8 @@ subtitle: Lab updates, presentations, and announcements.
     {% include news-item.html item=item %}
   {% endfor %}
 </div>
+
+<p class="page-footnote">
+  These are placeholder entries. Replace them with real updates in
+  <code>_data/news.yml</code> — newest item at the top of the file.
+</p>

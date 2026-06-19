@@ -21,13 +21,13 @@
   title: "Associate Professor"
   group: pi
   email: "jzhao2@sdsu.edu"
-  photo: "/assets/images/people/jing-zhao.jpg"
+  photo: ""   # add assets/images/people/jing-zhao.jpg (e.g. her SDSU profile photo) and set photo: /assets/images/people/jing-zhao.jpg
   bio: >
     Dr. Zhao's research focuses on the functionality and flavor impacts
     of food proteins, including agricultural by-product utilization,
     novel protein development and characterization (insect and algae
     proteins), and the use of plant and algae proteins in alternative
-    meat products.
+    meat products. (Source: SDSU faculty profile.)
 
 - name: "Dr. Ali Raza"
   role: "Research Scientist"
@@ -142,58 +142,3 @@
   email: "kkemenes1457@sdsu.edu"
   photo: ""
   note: "Graduated — destination to be confirmed."
-
-- name: "Jesse Baker"
-  role: "Former Lab Member"
-  group: alumni
-  project: "Rice Bran Protein Extraction, Seafood Flavor Development"
-  photo: ""
-
-- name: "Sarah Kinsey"
-  role: "Former Lab Member"
-  group: alumni
-  photo: ""
-
-- name: "April Flowers"
-  role: "Former Lab Member"
-  group: alumni
-  photo: ""
-
-- name: "Kayla Boggs"
-  role: "Former Lab Member"
-  group: alumni
-  photo: ""
-
-- name: "Anna Kwon"
-  role: "Former Lab Member"
-  group: alumni
-  photo: ""
-
-- name: "Selene Alvarado Martinez"
-  role: "Former Lab Member"
-  group: alumni
-  project: "Algae Protein Extraction and Flavor Characterization"
-  photo: ""
-
-- name: "Carlos Jaimes Noriega"
-  role: "Former Lab Member"
-  group: alumni
-  project: "Rice Bran Protein Extraction, Huitlacoche Composition and Flavor"
-  photo: ""
-
-- name: "Ellie Cramton"
-  role: "Former Lab Member"
-  group: alumni
-  project: "Algae Protein Extraction and Flavor Characterization"
-  photo: ""
-
-- name: "Hugo Fehrenbach"
-  role: "Former Lab Member"
-  group: alumni
-  project: "Rice Bran Protein Extraction, Seafood Flavor Development"
-  photo: ""
-
-- name: "Daniella Rosas"
-  role: "Former Lab Member"
-  group: alumni
-  photo: ""

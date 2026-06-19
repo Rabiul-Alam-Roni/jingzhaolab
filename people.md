@@ -55,3 +55,9 @@ subtitle: The Zhao Food Science Lab team, Spring/Summer 2026.
     {% for member in alumni_members %}{% include member-card.html member=member index=forloop.index0 %}{% endfor %}
   </div>
 {% endif %}
+
+<p class="page-footnote">
+  Source: Spring/Summer 2026 lab roster. Weekly availability and travel
+  schedules from that roster are kept internal and are not published here.
+  To add or update someone, edit <code>_data/lab_members.yml</code>.
+</p>

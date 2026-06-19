@@ -8,7 +8,9 @@ subtitle: Associate Professor, School of Exercise and Nutritional Sciences, San 
 
 <div class="profile-block">
   <div class="profile-block__avatar avatar--0">
-    <img src="{{ '/assets/images/people/jing-zhao.jpg' | relative_url }}" alt="Photo of Dr. Jing Zhao">
+    {% comment %} Drop Dr. Zhao's photo at assets/images/people/jing-zhao.jpg, then replace the line below with:
+    <img src="{{ '/assets/images/people/jing-zhao.jpg' | relative_url }}" alt="Photo of Dr. Jing Zhao"> {% endcomment %}
+    <span>JZ</span>
   </div>
   <div class="profile-block__body">
     <h2>Dr. Jing Zhao</h2>
@@ -30,6 +32,8 @@ stabilization of C-phycocyanin (a blue colorant derived from spirulina), and
 characterization and synthesis of meat and seafood flavors from alternative
 proteins.
 
+*(Source: SDSU faculty profile.)*
+
 ## Education
 
 - Ph.D., Animal and Food Sciences — University of Kentucky, 2012
@@ -45,4 +49,9 @@ proteins.
 ## Background
 
 {% include placeholder-badge.html text="To be updated" %}
-A fuller narrative biography can be added here.
+A fuller narrative biography (career path, awards, and SDSU-specific
+highlights since 2022) can be added here. Dr. Zhao's CV on file covers her
+appointments through 2022, including prior roles at California State
+University, Los Angeles, and postdoctoral work at the University of Kentucky,
+Florida State University, and the University of Wisconsin–Madison — replace
+this note with current, SDSU-specific narrative copy when ready.

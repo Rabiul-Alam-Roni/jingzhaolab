@@ -72,25 +72,3 @@
   status: completed
   team: "Krisztina Kemenes (alumna)"
   description: "To be updated."
-
-- name: "Rice Bran Protein Extraction, Functionality, and Safety"
-  status: completed
-  team: "Carlos Jaimes Noriega, Hugo Fehrenbach, Jesse Baker"
-  description: "Extraction, functionality, and safety of protein from rice bran."
-  link: "https://jzhao.sdsu.edu/index.php/2023/06/10/rice-bran/"
-
-- name: "Seafood Flavor Development"
-  status: completed
-  team: "Jesse Baker, Hugo Fehrenbach"
-  description: "To be updated."
-  link: "https://jzhao.sdsu.edu/index.php/2023/06/10/seafood-flavor-development/"
-
-- name: "Algae Protein Extraction and Flavor Characterization"
-  status: completed
-  team: "Selene Alvarado Martinez, Ellie Cramton"
-  description: "To be updated."
-
-- name: "Huitlacoche Composition and Flavor"
-  status: completed
-  team: "Carlos Jaimes Noriega"
-  description: "To be updated."
