@@ -2,7 +2,6 @@
 layout: page
 title: Lab Members
 permalink: /people/
-subtitle: The Zhao Food Science Lab team, Spring/Summer 2026.
 ---
 
 {% include photo-carousel.html photos=site.data.team_photos id="people-photos" %}
