@@ -2,7 +2,6 @@
 layout: page
 title: Facilities
 permalink: /facilities/
-subtitle: Equipment and lab spaces supporting the lab's flavor chemistry and sensory research.
 ---
 
 <div class="facility-section">
