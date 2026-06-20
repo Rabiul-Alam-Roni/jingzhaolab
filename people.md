@@ -24,14 +24,6 @@ permalink: /people/
   </div>
 {% endif %}
 
-{% assign collab_members = all_members | where: "group", "collaborator" %}
-{% if collab_members.size > 0 %}
-  <h2 class="section-subhead">Collaborators</h2>
-  <div class="grid grid--3">
-    {% for member in collab_members %}{% include member-card.html member=member index=forloop.index0 %}{% endfor %}
-  </div>
-{% endif %}
-
 {% assign grad_members = all_members | where: "group", "grad" %}
 {% if grad_members.size > 0 %}
   <h2 class="section-subhead">Graduate Students</h2>
