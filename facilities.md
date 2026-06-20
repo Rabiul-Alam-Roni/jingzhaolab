@@ -23,45 +23,7 @@ permalink: /facilities/
       <p class="equipment-card__name">Agilent 8890 GC System with Gerstel ODP 4</p>
     </div>
   </div>
-
-  <div class="spec-columns">
-    <div>
-      <h4>Physical Components</h4>
-      <ul>
-        <li>Agilent 8890 GC System</li>
-        <li>Agilent 5977C MSD System</li>
-        <li>Gerstel Olfactory Detection Port (ODP 4)</li>
-        <li>Gerstel Cooled Injection System 4C (CIS 4C) Bundle</li>
-        <li>Gerstel Twister Desorption Unit Version 2 (TDU 2)</li>
-      </ul>
-    </div>
-    <div>
-      <h4>Software</h4>
-      <ul>
-        <li>Agilent MassHunter Software</li>
-        <li>ChemStation</li>
-        <li>NIST MS Library Bundle</li>
-        <li>Olfactory Data Interpreter (ODI) software</li>
-      </ul>
-    </div>
-  </div>
-
-  <h4>Sample Preparation Capacities</h4>
-  <ul>
-    <li>Static headspace injection</li>
-    <li>Liquid injection</li>
-    <li>Headspace solid phase microextraction</li>
-    <li>Twister solid phase microextraction</li>
-    <li>Single volatile compound concentration through ODP port</li>
-  </ul>
-
-  <p>
-    Faculty: Dr. Jing Zhao, Dr. Changqi Liu &middot; Research Scientist:
-    Dr. Ali Raza. Graduate and undergraduate researchers in the lab are
-    involved in volatile analysis work.
-  </p>
-</div>
-
+  
 <div class="facility-section">
   <h2>Sensory Evaluation Laboratory</h2>
   <div class="facility-section__intro">
