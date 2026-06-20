@@ -92,10 +92,10 @@ first):
   summary: "One or two sentences."
 ```
 
-### Edit Research Areas, Teaching, Opportunities, Contact, etc.
+### Edit Research Areas, Opportunities, Contact, etc.
 
 These are mostly plain text. Open the matching `.md` file in the root
-folder (e.g. `teaching.md`, `contact.md`) and edit the text under the
+folder (e.g. `opportunities.md`, `contact.md`) and edit the text under the
 `---` front matter block. Anything written in **Markdown** (like
 `## Heading` or `- bullet`) will render automatically.
 
@@ -234,8 +234,6 @@ content:
   "Food Innovation & Sustainability") — inferred from current projects,
   not yet confirmed by Dr. Zhao
 - News items (all four are placeholders)
-- Teaching page (Dr. Zhao's CV only covers courses through 2021, before
-  her move to SDSU)
 - Facilities page (no equipment list was available — currently
   "Coming soon"; delete `facilities.md` and its `_data/nav.yml` entry
   if you'd rather remove the page than show "coming soon")
