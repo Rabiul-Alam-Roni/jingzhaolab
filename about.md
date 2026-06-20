@@ -23,21 +23,24 @@ permalink: /about/
 <div class="profile-bio">
   <p>
     Dr. Jing Zhao is an Associate Professor in the School of Exercise and
-    Nutritional Sciences at San Diego State University, where she has been
-    on faculty since 2022. She previously held a tenured faculty position
-    at California State University, Los Angeles (2016–2022), and completed
-    postdoctoral research at the University of Wisconsin–Madison, Florida
-    State University, and the University of Kentucky, where she also earned
-    her Ph.D. in Animal and Food Sciences.
+    Nutritional Sciences at San Diego State University. Her research
+    focuses on food protein chemistry, flavor chemistry, and the
+    development and characterization of sustainable protein ingredients.
   </p>
   <p>
-    Her research spans the extraction and functional characterization of
-    alternative proteins, the development of flavors from alternative
-    protein sources, stabilization of blue pigments derived from spirulina,
-    and the nutritional composition and consumer acceptance of edible
-    insects. Current projects include rice bran protein extraction for
-    gluten-free pasta and the characterization of meat and seafood flavors
-    from alternative proteins.
+    Dr. Zhao's work examines the functionality and flavor impacts of
+    proteins from plant, algae, insect, dairy, marine, and agricultural
+    by-product sources. Her broader research background includes
+    alternative proteins, protein functionality, food flavor
+    characterization, edible insects, protein-rich food ingredients, and
+    the application of computational and data-driven approaches in food
+    science.
+  </p>
+  <p>
+    She received her Ph.D. in Animal and Food Sciences from the University
+    of Kentucky and completed postdoctoral training at the University of
+    Wisconsin-Madison, Florida State University, and the University of
+    Kentucky before joining San Diego State University.
   </p>
 </div>
 
