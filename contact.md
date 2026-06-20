@@ -25,5 +25,3 @@ subtitle: Get in touch with the Zhao Food Science Lab.
     <h3>Mailing Address</h3>
     <p>{{ site.contact_address }}</p>
   </div>
-  </div>
-</div>
