@@ -25,12 +25,5 @@ subtitle: Get in touch with the Zhao Food Science Lab.
     <h3>Mailing Address</h3>
     <p>{{ site.contact_address }}</p>
   </div>
-
-  <div class="contact-card">
-    <h3>Elsewhere</h3>
-    <ul class="contact-card__links">
-      <li><a href="{{ site.sdsu_profile_url }}">SDSU Faculty Profile</a></li>
-      <li><a href="{{ site.scholar_url }}">Google Scholar</a></li>
-    </ul>
   </div>
 </div>
