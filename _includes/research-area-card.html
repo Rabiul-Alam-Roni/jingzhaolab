@@ -1,0 +1,11 @@
+{% comment %}
+  Usage: {% include research-area-card.html area=area %}
+{% endcomment %}
+{% assign a = include.area %}
+<article class="area-card">
+  <h3 class="area-card__title">{{ a.name }}</h3>
+  <p class="area-card__desc">{{ a.description }}</p>
+  {% unless a.confirmed %}
+    {% include placeholder-badge.html text="To be confirmed" %}
+  {% endunless %}
+</article>

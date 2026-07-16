@@ -1,0 +1,4 @@
+{% comment %}
+  Usage: {% include placeholder-badge.html text="To be updated" %}
+{% endcomment %}
+<span class="badge badge--placeholder">{{ include.text | default: "To be updated" }}</span>

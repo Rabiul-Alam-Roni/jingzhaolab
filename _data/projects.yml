@@ -1,0 +1,96 @@
+# ───────────────────────────────────────────────────────────
+# CURRENT PROJECTS
+# ───────────────────────────────────────────────────────────
+# Source: project codenames from the Spring/Summer 2026 roster.
+# Descriptions are intentionally left as "To be updated" — replace
+# the description field with a real 1-3 sentence summary whenever
+# you're ready. Do not delete the "status" field; it controls which
+# section of the Projects page a card appears in (active / completed).
+# ───────────────────────────────────────────────────────────
+
+- name: "eFARMS"
+  status: active
+  team: "Dr. Changqi Liu, Rabiul Alam Roni, Charles Bilgrien, Liana Feng"
+  description: "To be updated."
+
+- name: "USDA Microalgae Initiative"
+  status: active
+  team: "Dr. Changqi Liu, Dr. Ali Raza, Natalie Yu, Helen Ruiz, Judy Figueroa, Stacey Lehrer"
+  description: "To be updated."
+
+- name: "AI Bobby"
+  status: active
+  team: "Dr. Ali Raza, Rabiul Alam Roni"
+  description: "To be updated."
+
+- name: "Chapman Coffee"
+  status: active
+  team: "Dr. Ali Raza"
+  description: "To be updated."
+
+- name: "CPP Pea Protein"
+  status: active
+  team: "Dr. Ali Raza"
+  description: "To be updated."
+
+- name: "WSU Wheat Protein Meat Analogue"
+  status: active
+  team: "Rabiul Alam Roni"
+  description: "To be updated."
+
+- name: "Brewing Project"
+  status: active
+  team: "Jacob Pascua"
+  description: "To be updated."
+
+- name: "Metarom"
+  status: active
+  team: "Cayla Green"
+  description: "To be updated."
+
+- name: "Smolbol"
+  status: active
+  team: "Aerin Felton"
+  description: "To be updated."
+
+- name: "NASA Food Challenge"
+  status: active
+  team: "Aerin Felton"
+  description: "To be updated."
+
+- name: "Spirulina Allergen & Sensory Research"
+  status: active
+  team: "Liana Feng"
+  description: "To be updated."
+
+- name: "Antioxidant & Flavor Research (HPLC)"
+  status: forming
+  team: "Giovanni Hernandez Soto"
+  description: "Project scope to be finalized."
+
+- name: "NASA Space Guacamole — Antioxidant Research"
+  status: completed
+  team: "Krisztina Kemenes (alumna)"
+  description: "To be updated."
+
+- name: "Rice Bran Protein Extraction, Functionality, and Safety"
+  status: completed
+  team: "Carlos Jaimes Noriega, Hugo Fehrenbach, Jesse Baker"
+  description: "Extraction, functionality, and safety of protein from rice bran."
+  link: "https://jzhao.sdsu.edu/index.php/2023/06/10/rice-bran/"
+
+- name: "Seafood Flavor Development"
+  status: completed
+  team: "Jesse Baker, Hugo Fehrenbach"
+  description: "To be updated."
+  link: "https://jzhao.sdsu.edu/index.php/2023/06/10/seafood-flavor-development/"
+
+- name: "Algae Protein Extraction and Flavor Characterization"
+  status: completed
+  team: "Selene Alvarado Martinez, Ellie Cramton"
+  description: "To be updated."
+
+- name: "Huitlacoche Composition and Flavor"
+  status: completed
+  team: "Carlos Jaimes Noriega"
+  description: "To be updated."
