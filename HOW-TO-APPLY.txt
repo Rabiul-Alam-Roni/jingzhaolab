@@ -1,0 +1,54 @@
+=====================================================================
+ ZHAO LAB WEBSITE — UPDATE PACK (8 files)
+=====================================================================
+WHAT THIS DOES
+  • People "dropdown" nav (by role: PI, Staff, Collaborators, Grad,
+    Undergrad, Interns, Alumni) — like the reference screenshot.
+  • Research dropdown = Research Areas + Publications (with a nested
+    Journal Articles / Books fly-out) + Current Projects + Previous
+    Projects.
+  • Facilities page rebuilt as a 4-across photo-card grid using your
+    lab's REAL equipment (6 real items, real photos already in the
+    repo). A copy-paste blank card template is at the bottom of the
+    file for adding more equipment later.
+  • Current Projects page rebuilt as image tiles (colored placeholder
+    tiles now; drop in real photos whenever you have them).
+
+  All content comes from your own _data files. No Cornell equipment,
+  people, or projects were copied in — only the visual layout style.
+
+FILES IN THIS PACK (folder paths match your repo exactly):
+  _data/nav.yml                  (replaces existing)
+  _includes/header.html          (replaces existing)
+  _includes/project-tile.html    (NEW file)
+  assets/css/main.css            (replaces existing)
+  facilities.md                  (replaces existing)
+  people.md                      (replaces existing)
+  projects.md                    (replaces existing)
+  publications.md                (replaces existing)
+
+HOW TO APPLY (GitHub Desktop + VS Code)
+  1. Open your local "jingzhaolab" folder (the one GitHub Desktop
+     tracks) in Finder / File Explorer.
+  2. Drag the CONTENTS of this pack into that folder — i.e. drop the
+     "_data", "_includes", "assets" folders and the four .md files
+     on top of your existing ones. When asked, choose "Replace" /
+     "Merge". This overwrites only the 8 files above; nothing else is
+     deleted.
+  3. Open GitHub Desktop. You should see exactly these files as
+     "Changed". Review if you like.
+  4. Summary box: "Restyle facilities/projects as cards; add People &
+     Research dropdown menus". Click Commit to main, then Push origin.
+  5. Wait 1–2 minutes, then hard-refresh the live site
+     (Cmd/Ctrl + Shift + R).
+
+TO ADD MORE EQUIPMENT (real items only)
+  1. Put the photo in  assets/images/lab/
+  2. Open facilities.md, copy the blank card template at the bottom
+     into the grid, and fill in the image name + text.
+
+TO ADD A PROJECT PHOTO
+  1. Put the photo in  assets/images/projects/
+  2. In _data/projects.yml, add this line under that project:
+        image: "/assets/images/projects/your-file.jpg"
+=====================================================================

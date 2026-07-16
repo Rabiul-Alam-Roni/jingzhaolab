@@ -1,0 +1,25 @@
+{% comment %}
+  Image-card tile for the Current Projects page.
+  Usage: {% include project-tile.html project=project index=forloop.index0 %}
+
+  If a project has an "image:" field in _data/projects.yml, that photo
+  is shown. If not, a colored placeholder with the project's first
+  letter is shown instead — so the page never has broken images.
+  To add a real photo later: drop the file in assets/images/projects/
+  and add   image: "/assets/images/projects/your-file.jpg"   to the
+  project's block in _data/projects.yml.
+{% endcomment %}
+{% assign p = include.project %}
+{% assign grad_index = include.index | modulo: 4 %}
+{% assign first_letter = p.name | strip | slice: 0, 1 | upcase %}
+
+<a class="project-tile"{% if p.link %} href="{{ p.link }}"{% endif %}>
+  <div class="project-tile__photo{% unless p.image and p.image != '' %} tile-grad--{{ grad_index }}{% endunless %}">
+    {% if p.image and p.image != "" %}
+      <img src="{{ p.image | relative_url }}" alt="{{ p.name }}">
+    {% else %}
+      <span class="project-tile__mark">{{ first_letter }}</span>
+    {% endif %}
+  </div>
+  <p class="project-tile__title">{{ p.name }}</p>
+</a>

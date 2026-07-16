@@ -1,10 +1,17 @@
 # ───────────────────────────────────────────────────────────
 # NAVIGATION
 # ───────────────────────────────────────────────────────────
-# Reorder this list to reorder the nav bar. Add "children:" to
-# turn an item into a dropdown (see "Research" below).
+# Reorder this list to reorder the nav bar.
+#
+# HOW DROPDOWNS WORK
+#   • Add "children:" under an item to make it a dropdown.
+#   • A child can ALSO have its own "children:" to make a second-
+#     level fly-out menu (see Research → Publications below).
+#
 # All "url" values are relative — the site adds the base path
 # (GitHub Pages subfolder, or none on the SDSU domain) automatically.
+# A url like "/people/#grad" jumps to the "Graduate Students"
+# section on the People page.
 # ───────────────────────────────────────────────────────────
 
 - title: Home
@@ -13,19 +20,42 @@
 - title: About
   url: /about/
 
+# ── People: dropdown by role (jumps to sections on the People page)
+- title: People
+  url: /people/
+  children:
+    - title: Dr. Jing Zhao
+      url: /people/#pi
+    - title: Research Staff
+      url: /people/#staff
+    - title: Collaborators
+      url: /people/#collaborators
+    - title: Graduate Students
+      url: /people/#grad
+    - title: Undergraduate Researchers
+      url: /people/#undergrad
+    - title: Visiting Interns
+      url: /people/#intern
+    - title: Alumni
+      url: /people/#alumni
+
+# ── Research: dropdown, with a nested Publications fly-out
 - title: Research
   url: /research-areas/
   children:
     - title: Research Areas
       url: /research-areas/
+    - title: Publications
+      url: /publications/
+      children:
+        - title: Journal Articles
+          url: /publications/#journal-articles
+        - title: Books & Book Chapters
+          url: /publications/#books
     - title: Current Projects
       url: /projects/
-
-- title: People
-  url: /people/
-
-- title: Publications
-  url: /publications/
+    - title: Previous Projects
+      url: /projects/#previous
 
 - title: News
   url: /news/

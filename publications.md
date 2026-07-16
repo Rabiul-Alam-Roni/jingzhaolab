@@ -9,7 +9,7 @@ subtitle: Selected publications. For the complete and most current list, see Goo
   <a class="btn btn--primary" href="{{ site.scholar_url }}">View full publication list on Google Scholar →</a>
 </div>
 
-## Selected Journal Articles
+<h2 id="journal-articles" class="section-subhead">Selected Journal Articles</h2>
 
 <ul class="pub-list">
   {% for pub in site.data.publications.journal_articles %}
@@ -17,7 +17,7 @@ subtitle: Selected publications. For the complete and most current list, see Goo
   {% endfor %}
 </ul>
 
-## Books & Book Chapters
+<h2 id="books" class="section-subhead">Books &amp; Book Chapters</h2>
 
 <ul class="pub-list">
   {% for book in site.data.publications.books %}

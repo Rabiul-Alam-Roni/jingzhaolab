@@ -28,9 +28,25 @@
                 <ul class="site-nav__submenu">
                   {% for child in item.children %}
                     <li>
-                      <a href="{{ child.url | relative_url }}" class="site-nav__sublink{% if page.url == child.url %} is-active{% endif %}">
-                        {{ child.title }}
-                      </a>
+                      {% if child.children %}
+                        {% comment %} Second-level fly-out menu {% endcomment %}
+                        <details class="site-nav__subdropdown">
+                          <summary class="site-nav__sublink site-nav__sublink--parent">
+                            <span>{{ child.title }}</span><span class="site-nav__chevron site-nav__chevron--right" aria-hidden="true">▸</span>
+                          </summary>
+                          <ul class="site-nav__submenu site-nav__submenu--nested">
+                            {% for grandchild in child.children %}
+                              <li>
+                                <a href="{{ grandchild.url | relative_url }}" class="site-nav__sublink">{{ grandchild.title }}</a>
+                              </li>
+                            {% endfor %}
+                          </ul>
+                        </details>
+                      {% else %}
+                        <a href="{{ child.url | relative_url }}" class="site-nav__sublink{% if page.url == child.url %} is-active{% endif %}">
+                          {{ child.title }}
+                        </a>
+                      {% endif %}
                     </li>
                   {% endfor %}
                 </ul>
